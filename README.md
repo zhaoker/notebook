@@ -1,119 +1,68 @@
-Jd_Seckill
-=======
+# Arduino 3.x
 
-#### 还未收到安全通知，但是估计也快了，给大家建个Telegram群吧，茶余饭后，聊天扯淡，有条件的可以加入：https://t.me/joinchat/GsDnhtkdKJ4nbwJh
+Arduino 3.x is not officially suported by PlatformIO - see [platformio/platform-espressif32#1225](https://github.com/platformio/platform-espressif32/issues/1225)
 
-> ⚠ 此项目是[python jd_seckill](https://github.com/huanghyw/jd_seckill) 的go版本实现，旨在降低使用门栏和相互学习而创建。
+Due to the lack of further development of the Espressif 32 Arduino Core for PlatformIO, the [pioarduino](https://github.com/pioarduino/platform-espressif32) fork was created.
 
-**go版本的jd_seckill，京东抢茅台神器，支持跨平台，使用者请在发布页下载可执行文件，欢迎pr。**
+## Arduino 3.1.x
 
-## 支持系统
+| platform-espressif32                                                                 | Arduino Core                                                           | based on ESP-IDF                                                  | `platformio.ini`                                                                                                    |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| [53.03.11](https://github.com/pioarduino/platform-espressif32/releases/tag/53.03.10) | [3.1.1](https://github.com/espressif/arduino-esp32/releases/tag/3.1.1) | [5.3.2](https://github.com/espressif/esp-idf/releases/tag/v5.3.2) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/53.03.11/platform-espressif32.zip` |
+| [53.03.10](https://github.com/pioarduino/platform-espressif32/releases/tag/53.03.10) | [3.1.0](https://github.com/espressif/arduino-esp32/releases/tag/3.1.0) | [5.3.2](https://github.com/espressif/esp-idf/releases/tag/v5.3.2) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/53.03.10/platform-espressif32.zip` |
+|                                                                                      |                                                                        |                                                                   |                                                                                                                     |
 
->目前编译好的可执行文件有Windows,MacOS,Linux,arm,mips平台。
+## Arduino 3.0.x
 
-## 安装
+| platform-espressif32                                                                     | Arduino Core                                                           | based on ESP-IDF                                                  | `platformio.ini`                                                                                                      |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [51.03.07](https://github.com/pioarduino/platform-espressif32/releases/tag/51.03.07)     | [3.0.7](https://github.com/espressif/arduino-esp32/releases/tag/3.0.7) | [5.1.4](https://github.com/espressif/esp-idf/releases/tag/v5.1.4) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/51.03.07/platform-espressif32.zip`   |
+| [51.03.06](https://github.com/pioarduino/platform-espressif32/releases/tag/51.03.06)     | [3.0.6](https://github.com/espressif/arduino-esp32/releases/tag/3.0.6) | [5.1.4](https://github.com/espressif/esp-idf/releases/tag/v5.1.4) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/51.03.06/platform-espressif32.zip`   |
+| [51.03.05](https://github.com/pioarduino/platform-espressif32/releases/tag/51.03.05)     | [3.0.5](https://github.com/espressif/arduino-esp32/releases/tag/3.0.5) | [5.1.4](https://github.com/espressif/esp-idf/releases/tag/v5.1.4) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/51.03.05/platform-espressif32.zip`   |
+| [51.03.04](https://github.com/pioarduino/platform-espressif32/releases/tag/51.03.04)     | [3.0.4](https://github.com/espressif/arduino-esp32/releases/tag/3.0.4) | [5.1.4](https://github.com/espressif/esp-idf/releases/tag/v5.1.4) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/51.03.04/platform-espressif32.zip`   |
+| [51.03.03](https://github.com/pioarduino/platform-espressif32/releases/tag/51.03.03)     | [3.0.3](https://github.com/espressif/arduino-esp32/releases/tag/3.0.3) | [5.1.4](https://github.com/espressif/esp-idf/releases/tag/v5.1.4) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/51.03.03/platform-espressif32.zip`   |
+| [2024.07.00](https://github.com/pioarduino/platform-espressif32/releases/tag/2024.07.00) | [3.0.2](https://github.com/espressif/arduino-esp32/releases/tag/3.0.2) | [5.1.4](https://github.com/espressif/esp-idf/releases/tag/v5.1.4) | `platform = https://github.com/pioarduino/platform-espressif32/releases/download/2024.07.00/platform-espressif32.zip` |
+|                                                                                          |                                                                        |                                                                   |                                                                                                                       |
 
-方式一(推荐):
+## Arduino 2.x
+| platform-espressif32                                                            | Arduino Core                                                             | based on ESP-IDF                                                          | `platformio.ini`         |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------- | --------------------- |
+| [6.9.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.9.0) | [2.0.17](https://github.com/espressif/arduino-esp32/releases/tag/2.0.17) | [4.4.7](https://github.com/espressif/esp-idf/releases/tag/v4.4.7)         | `platform = espressif32 @ 6.9.0` |
+| [6.8.1](https://github.com/platformio/platform-espressif32/releases/tag/v6.8.1) | [2.0.17](https://github.com/espressif/arduino-esp32/releases/tag/2.0.17) | [4.4.7](https://github.com/espressif/esp-idf/releases/tag/v4.4.7)         | `platform = espressif32 @ 6.8.1` |
+| [6.8.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.8.0) | [2.0.17](https://github.com/espressif/arduino-esp32/releases/tag/2.0.17) | [4.4.7](https://github.com/espressif/esp-idf/releases/tag/v4.4.7)         | `platform = espressif32 @ 6.8.0` |
+| [6.7.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.7.0) | [2.0.16](https://github.com/espressif/arduino-esp32/releases/tag/2.0.16) | [4.4.7](https://github.com/espressif/esp-idf/releases/tag/v4.4.7)         | `platform = espressif32 @ 6.7.0` |
+| [6.6.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.6.0) | [2.0.14](https://github.com/espressif/arduino-esp32/releases/tag/2.0.14) | [4.4.6](https://github.com/espressif/esp-idf/releases/tag/v4.4.6)         | `platform = espressif32 @ 6.6.0` |
+| [6.5.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.5.0) | [2.0.14](https://github.com/espressif/arduino-esp32/releases/tag/2.0.14) | [4.4.6](https://github.com/espressif/esp-idf/releases/tag/v4.4.6)         | `platform = espressif32 @ 6.5.0` |
+| [6.4.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.4.0) | [2.0.11](https://github.com/espressif/arduino-esp32/releases/tag/2.0.11) | [4.4.5](https://github.com/espressif/esp-idf/releases/tag/v4.4.5)         | `platform = espressif32 @ 6.4.0` |
+| [6.3.2](https://github.com/platformio/platform-espressif32/releases/tag/v6.3.2) | [2.0.9](https://github.com/espressif/arduino-esp32/releases/tag/2.0.9)   | [4.4.4](https://github.com/espressif/esp-idf/releases/tag/v4.4.4)         | `platform = espressif32 @ 6.3.2` |
+| [6.3.1](https://github.com/platformio/platform-espressif32/releases/tag/v6.3.1) | [2.0.9](https://github.com/espressif/arduino-esp32/releases/tag/2.0.9)   | [4.4.4](https://github.com/espressif/esp-idf/releases/tag/v4.4.4)         | `platform = espressif32 @ 6.3.1` |
+| [6.3.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.3.0) | [2.0.9](https://github.com/espressif/arduino-esp32/releases/tag/2.0.9)   | [4.4.4](https://github.com/espressif/esp-idf/releases/tag/v4.4.4)         | `platform = espressif32 @ 6.3.0` |
+| [6.2.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.2.0) | [2.0.8](https://github.com/espressif/arduino-esp32/releases/tag/2.0.8)   | [4.4.4](https://github.com/espressif/esp-idf/releases/tag/v4.4.4)         | `platform = espressif32 @ 6.2.0` |
+| [6.1.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.1.0) | [2.0.7](https://github.com/espressif/arduino-esp32/releases/tag/2.0.7)   | [4.4.4](https://github.com/espressif/esp-idf/releases/tag/v4.4.4)         | `platform = espressif32 @ 6.1.0` |
+| [6.0.1](https://github.com/platformio/platform-espressif32/releases/tag/v6.0.1) | [2.0.6](https://github.com/espressif/arduino-esp32/releases/tag/2.0.6)   | [4.4.3](https://github.com/espressif/esp-idf/releases/tag/v4.4.3)         | `platform = espressif32 @ 6.0.1` |
+| [6.0.0](https://github.com/platformio/platform-espressif32/releases/tag/v6.0.0) | [2.0.6](https://github.com/espressif/arduino-esp32/releases/tag/2.0.6)   | [4.4.3](https://github.com/espressif/esp-idf/releases/tag/v4.4.3)         | `platform = espressif32 @ 6.0.0` |
+| [5.4.0](https://github.com/platformio/platform-espressif32/releases/tag/v5.4.0) | [2.0.6](https://github.com/espressif/arduino-esp32/releases/tag/2.0.6)   | [4.4.3](https://github.com/espressif/esp-idf/releases/tag/v4.4.3)         | `platform = espressif32 @ 5.4.0` |
+| [5.3.0](https://github.com/platformio/platform-espressif32/releases/tag/v5.3.0) | [2.0.6](https://github.com/espressif/arduino-esp32/releases/tag/2.0.6)   | [4.4.3](https://github.com/espressif/esp-idf/releases/tag/v4.4.3)         | `platform = espressif32 @ 5.3.0` |
+| [5.2.0](https://github.com/platformio/platform-espressif32/releases/tag/v5.2.0) | [2.0.5](https://github.com/espressif/arduino-esp32/releases/tag/2.0.5)   | [4.4.2](https://github.com/espressif/esp-idf/releases/tag/v4.4.2)         | `platform = espressif32 @ 5.2.0` |
+| [5.1.1](https://github.com/platformio/platform-espressif32/releases/tag/v5.1.1) | [2.0.4](https://github.com/espressif/arduino-esp32/releases/tag/2.0.4)   | [4.4.1](https://github.com/espressif/esp-idf/releases/tag/v4.4.1)         | `platform = espressif32 @ 5.1.1` |
+| [5.1.0](https://github.com/platformio/platform-espressif32/releases/tag/v5.1.0) | [2.0.4](https://github.com/espressif/arduino-esp32/releases/tag/2.0.4)   | [4.4.1](https://github.com/espressif/esp-idf/releases/tag/v4.4.1)         | `platform = espressif32 @ 5.1.0` |
+| [5.0.0](https://github.com/platformio/platform-espressif32/releases/tag/v5.0.0) | [2.0.3](https://github.com/espressif/arduino-esp32/releases/tag/2.0.3)   | [4.4.1](https://github.com/espressif/esp-idf/releases/tag/v4.4.1)         | `platform = espressif32 @ 5.0.0` |
+| [4.4.0](https://github.com/platformio/platform-espressif32/releases/tag/v4.4.0) | [2.0.3](https://github.com/espressif/arduino-esp32/releases/tag/2.0.3)   | [4.4.1](https://github.com/espressif/esp-idf/releases/tag/v4.4.1)         | `platform = espressif32 @ 4.4.0` |
+| [4.3.0](https://github.com/platformio/platform-espressif32/releases/tag/v4.3.0) | [2.0.3](https://github.com/espressif/arduino-esp32/releases/tag/2.0.3)   | [4.4.1](https://github.com/espressif/esp-idf/releases/tag/v4.4.1)         | `platform = espressif32 @ 4.3.0` |
+| [4.2.0](https://github.com/platformio/platform-espressif32/releases/tag/v4.2.0) | [2.0.2](https://github.com/espressif/arduino-esp32/releases/tag/2.0.2)   | [4.4-beta1](https://github.com/espressif/esp-idf/releases/tag/v4.4-beta1) | `platform = espressif32 @ 4.2.0` |
+| [4.1.0](https://github.com/platformio/platform-espressif32/releases/tag/v4.1.0) | [2.0.1](https://github.com/espressif/arduino-esp32/releases/tag/2.0.1)   | [4.4.0](https://github.com/espressif/esp-idf/releases/tag/v4.4)           | `platform = espressif32 @ 4.1.0` |
+| [4.0.0](https://github.com/platformio/platform-espressif32/releases/tag/v4.0.0) | [2.0.0](https://github.com/espressif/arduino-esp32/releases/tag/2.0.0)   | [4.4.0](https://github.com/espressif/esp-idf/releases/tag/v4.4)           | `platform = espressif32 @ 4.0.0` |
 
-```shell
-git clone https://github.com/ztino/jd_seckill.git
-cd jd_seckill
-go get
-```
-
-方式二:
-
-```shell
-go get github.com/ztino/jd_seckill
-```
-
-## 待办
-- 自动化预约抢购支持，程序自动去茅台页面获取下一次抢购时间
-- 跨平台桌面端支持，打算使用：https://github.com/therecipe/qt
-
-## 使用
-
-> [下载](https://github.com/ztino/jd_seckill/releases) 对应平台的可执行文件，解压，终端进入该目录。
-
-### 登录
-执行以下命令按照提示操作:
-```shell
-jd_seckill login
-```
-
-### 自动获取eid,fp
-
-> ⚠依赖谷歌浏览器，请安装谷歌浏览器，windows下请将安装目录加入系统变量Path
-
-执行以下命令按照提示操作:
-```shell
-#参数--good_url商品链接必须设置，链接地址是一个可以加入购物车的商品
-jd_seckill jdTdudfp --good_url https://item.jd.com/100007959916.html
-```
-> ⚠获取成功后会将获取到的eid和fp写入到配置文件中
-
-### 预约
-执行以下命令按照提示操作:
-```shell
-jd_seckill reserve
-```
-
-### 抢购
-执行以下命令按照提示操作:
-```shell
-#支持--run参数，将跳过抢购等待时间，直接执行抢购任务，适合10点左右未设置抢购时间的使用
-jd_seckill seckill
-```
-
-### 退出登录
-```shell
-jd_seckill logout
-```
-
-### 获取版本号
-```shell
-jd_seckill version
-```
-
-> ⚠ 以上命令并不是每次都需要执行的，都是可选的，具体使用请参考提示。
-
-## 使用教程
-
-#### 1. 推荐Chrome浏览器
-#### 2. 网页扫码登录，或者账号密码登录
-#### 3. 填写config.ini配置信息
-(1)`eid`和`fp`找个普通商品随便下单,然后抓包就能看到,这两个值可以填固定的
-> 随便找一个商品下单，然后进入结算页面，打开浏览器的调试窗口，切换到控制台Tab页，在控制台中输入变量`_JdTdudfp`，即可从输出的Json中获取`eid`和`fp`。  
-> 不会的话参考issue https://github.com/ztino/jd_seckill/issues/2
-
-(2)`sku_id`,`default_user_agent`
-> `sku_id`已经按照茅台的填好。
-> `default_user_agent` 可以用默认的。谷歌浏览器也可以浏览器地址栏中输入about:version 查看`USER_AGENT`替换
-
-(3)配置一下时间
-> 现在不强制要求同步最新时间了，程序会自动同步京东时间
-> 但要是电脑时间快慢了好几分钟的，最好还是同步一下吧
-
-以上都是必须的.
-> tips：
-> 在程序开始运行后，会检测本地时间与京东服务器时间，输出的差值为本地时间-京东服务器时间，即-50为本地时间比京东服务器时间慢50ms。
-> 本代码的执行的抢购时间以本地电脑/服务器时间为准
-
-(4)修改抢购瓶数
-> 可在配置文件中找到seckill_num进行修改，默认值2瓶
-
-(5)抢购总时间
-> 可在配置文件中找到seckill_time进行修改，单位:分钟，默认两分钟
-
-(6)抢购任务数量
-> 可在配置文件中找到task_num进行修改，默认5个
-
-(7)每次抢购间隔时间
-> 可在配置文件中找到ticker_time进行修改，单位:毫秒，默认1500毫秒，每1000毫秒等于1秒
-
-(8)通知配置
-> 目前支持email，wechat，dingtalk，具体可查看配置文件
-
-## 感谢
-##### 非常感谢原作者 https://github.com/zhou-xiaojun/jd_mask 提供的代码
-##### 也非常感谢 https://github.com/wlwwu/jd_maotai 进行的优化
+## Arduino 1.x
+| platform-espressif32                                                            | Arduino Core                                                           | based on ESP-IDF                                                  | `platformio.ini`   |
+| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------- |
+| [3.5.0](https://github.com/platformio/platform-espressif32/releases/tag/v3.5.0) | [1.0.6](https://github.com/espressif/arduino-esp32/releases/tag/1.0.6) | [3.3.5](https://github.com/espressif/esp-idf/releases/tag/v3.3.5) | `platform = espressif32 @ 3.5.0` |
+| [3.4.0](https://github.com/platformio/platform-espressif32/releases/tag/v3.4.0) | [1.0.6](https://github.com/espressif/arduino-esp32/releases/tag/1.0.6) | [3.3.5](https://github.com/espressif/esp-idf/releases/tag/v3.3.5) | `platform = espressif32 @ 3.4.0` |
+| [3.3.2](https://github.com/platformio/platform-espressif32/releases/tag/v3.3.2) | [1.0.6](https://github.com/espressif/arduino-esp32/releases/tag/1.0.6) | [3.3.5](https://github.com/espressif/esp-idf/releases/tag/v3.3.5) | `platform = espressif32 @ 3.3.2` |
+| [3.3.1](https://github.com/platformio/platform-espressif32/releases/tag/v3.3.1) | [1.0.6](https://github.com/espressif/arduino-esp32/releases/tag/1.0.6) | [3.3.5](https://github.com/espressif/esp-idf/releases/tag/v3.3.5) | `platform = espressif32 @ 3.3.1` |
+| [3.3.0](https://github.com/platformio/platform-espressif32/releases/tag/v3.3.0) | [1.0.6](https://github.com/espressif/arduino-esp32/releases/tag/1.0.6) | [3.3.5](https://github.com/espressif/esp-idf/releases/tag/v3.3.5) | `platform = espressif32 @ 3.3.0` |
+| [3.2.1](https://github.com/platformio/platform-espressif32/releases/tag/v3.2.1) | [1.0.6](https://github.com/espressif/arduino-esp32/releases/tag/1.0.6) | [3.3.5](https://github.com/espressif/esp-idf/releases/tag/v3.3.5) | `platform = espressif32 @ 3.2.1` |
+| [3.2.0](https://github.com/platformio/platform-espressif32/releases/tag/v3.2.0) | [1.0.6](https://github.com/espressif/arduino-esp32/releases/tag/1.0.6) | [3.3.5](https://github.com/espressif/esp-idf/releases/tag/v3.3.5) | `platform = espressif32 @ 3.2.0` |
+| [3.1.1](https://github.com/platformio/platform-espressif32/releases/tag/v3.3.1) | [1.0.5](https://github.com/espressif/arduino-esp32/releases/tag/1.0.5) | [3.3.0](https://github.com/espressif/esp-idf/releases/tag/v3.3)   | `platform = espressif32 @ 3.1.1` |
+| [3.1.0](https://github.com/platformio/platform-espressif32/releases/tag/v3.1.0) | [1.0.5](https://github.com/espressif/arduino-esp32/releases/tag/1.0.5) | [3.3.0](https://github.com/espressif/esp-idf/releases/tag/v3.3)   | `platform = espressif32 @ 3.1.0` |
+| [3.0.0](https://github.com/platformio/platform-espressif32/releases/tag/v3.0.0) | [1.0.5](https://github.com/espressif/arduino-esp32/releases/tag/1.0.5) | [3.3.0](https://github.com/espressif/esp-idf/releases/tag/v3.3)   | `platform = espressif32 @ 3.0.0` |
